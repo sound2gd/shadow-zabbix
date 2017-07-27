@@ -1,0 +1,75 @@
+html,
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+.navbar {
+  margin-bottom: 10px;
+  border-radius: 0px;
+}
+.navbar-brand {
+  float: none;
+}
+.navbar-nav .nav-item {
+  float: none;
+}
+.navbar-divider,
+.navbar-nav .nav-item+.nav-item,
+.navbar-nav .nav-link + .nav-link {
+  margin-left: 0;
+}
+@media (min-width: 34em) {
+  .navbar-brand {
+    float: left;
+  }
+  .navbar-nav .nav-item {
+    float: left;
+  }
+  .navbar-divider,
+  .navbar-nav .nav-item+.nav-item,
+  .navbar-nav .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+}
+
+
+#terminal-window{
+	max-width: 1000px;
+	margin: 1em auto;
+	box-shadow: 0 12px 24px rgba(0,0,0,.66);
+}
+
+#terminal-window::before{
+	content: "cris @ crisdeMacBook-Pro $";
+	color: #dfdbd2;
+	font-weight: bold;
+	font-size: 14px;
+
+	padding-top: 6px;
+	padding-left: 12px;
+
+	max-width: 1000px;
+	display: block;
+	height: 30px;
+
+	background-color: #3c3b37;
+	background-image: linear-gradient(to bottom, #59574f, #3f3e3a);
+	box-shadow: 0 1px 0 #58574e inset,
+				0 2px 0 #626055 inset;
+
+	border-radius: 6px 6px 0 0;
+}
+
+#terminal{
+	padding: 2px;
+	font-size: 17px;
+}
+
+#terminal > div.output{
+    overflow: auto;
+}
+
+span.line{
+    font-size:15px;
+    font-family: Courier New,Source Code Pro;
+}
